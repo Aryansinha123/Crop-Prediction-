@@ -1,0 +1,8 @@
+| Dataset          | Purpose          |
+| ---------------- | ---------------- |
+| Satellite NDVI   | Crop health      |
+| Weather Data     | Climate patterns |
+| Wheat Yield Data | Ground truth     |
+
+
+https://www.kaggle.com/datasets/abhinand05/crop-production-in-india

@@ -1,0 +1,26 @@
+Finalized Research Scope
+Topic
+
+Climate-Adaptive Wheat Yield Prediction in Uttar Pradesh Using Satellite and Temporal Weather Data (2015–2024)
+
+Your Core Novelty (Patent Direction)
+Dynamic Climate Correction Layer (DCCL)
+
+This will become your main innovation.
+
+Idea
+
+Traditional models fail during:
+
+delayed monsoon,
+heatwaves,
+abnormal rainfall,
+drought.
+
+Your Dynamic Climate Correction Layer will:
+
+detect abnormal climate conditions,
+dynamically adjust prediction weights,
+recalibrate yield confidence.
+
+This is the strongest part of your research + patent.
