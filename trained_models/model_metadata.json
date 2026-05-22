@@ -1,0 +1,556 @@
+{
+    "features": [
+        "T2M",
+        "RH2M",
+        "PRECTOTCORR",
+        "NDVI",
+        "Temp_Anomaly",
+        "Rain_Anomaly",
+        "Humidity_Anomaly",
+        "Climate_Anomaly_Score",
+        "Previous_Year_Yield",
+        "Rolling_Temp_Avg",
+        "Rolling_Rainfall_Avg",
+        "District_Encoded"
+    ],
+    "global_means": {
+        "T2M": 25.822204557345874,
+        "PRECTOTCORR": 958.1740791738382,
+        "RH2M": 53.0544724957383
+    },
+    "district_mapping": {
+        "agra": 0,
+        "aligarh": 1,
+        "ambedkar nagar": 2,
+        "auraiya": 3,
+        "azamgarh": 4,
+        "baghpat": 5,
+        "bahraich": 6,
+        "ballia": 7,
+        "balrampur": 8,
+        "banda": 9,
+        "bareilly": 10,
+        "basti": 11,
+        "bijnor": 12,
+        "bulandshahr": 13,
+        "chandauli": 14,
+        "chitrakoot": 15,
+        "deoria": 16,
+        "etah": 17,
+        "etawah": 18,
+        "faizabad": 19,
+        "farrukhabad": 20,
+        "fatehpur": 21,
+        "firozabad": 22,
+        "gautam buddha nagar": 23,
+        "ghaziabad": 24,
+        "ghazipur": 25,
+        "gonda": 26,
+        "gorakhpur": 27,
+        "hamirpur": 28,
+        "hardoi": 29,
+        "hathras": 30,
+        "jalaun": 31,
+        "jaunpur": 32,
+        "jhansi": 33,
+        "kannauj": 34,
+        "kanpur dehat": 35,
+        "kaushambi": 36,
+        "lalitpur": 37,
+        "lucknow": 38,
+        "maharajganj": 39,
+        "mahoba": 40,
+        "mainpuri": 41,
+        "mathura": 42,
+        "mau": 43,
+        "meerut": 44,
+        "mirzapur": 45,
+        "moradabad": 46,
+        "muzaffarnagar": 47,
+        "pilibhit": 48,
+        "pratapgarh": 49,
+        "rampur": 50,
+        "saharanpur": 51,
+        "shahjahanpur": 52,
+        "shravasti": 53,
+        "sitapur": 54,
+        "sonbhadra": 55,
+        "sultanpur": 56,
+        "unnao": 57,
+        "varanasi": 58
+    },
+    "historical_records": {
+        "agra": {
+            "latest_year": 2024,
+            "latest_yield": 2.411001499603046,
+            "latest_t2m": 25.917786885245903,
+            "latest_prectotcorr": 1016.9,
+            "prev_t2m": 25.90109589041096,
+            "prev_prectotcorr": 687.78
+        },
+        "aligarh": {
+            "latest_year": 2024,
+            "latest_yield": 2.448001719913825,
+            "latest_t2m": 25.653797814207653,
+            "latest_prectotcorr": 817.63,
+            "prev_t2m": 25.133397260273973,
+            "prev_prectotcorr": 782.89
+        },
+        "ambedkar nagar": {
+            "latest_year": 2024,
+            "latest_yield": 2.297000774154881,
+            "latest_t2m": 26.24344262295082,
+            "latest_prectotcorr": 1019.74,
+            "prev_t2m": 26.074273972602743,
+            "prev_prectotcorr": 893.6
+        },
+        "auraiya": {
+            "latest_year": 2024,
+            "latest_yield": 2.264996501854496,
+            "latest_t2m": 26.093743169398905,
+            "latest_prectotcorr": 930.87,
+            "prev_t2m": 25.99284931506849,
+            "prev_prectotcorr": 735.4
+        },
+        "azamgarh": {
+            "latest_year": 2024,
+            "latest_yield": 2.1180006314140805,
+            "latest_t2m": 26.39584699453552,
+            "latest_prectotcorr": 910.36,
+            "prev_t2m": 26.32180821917808,
+            "prev_prectotcorr": 802.06
+        },
+        "baghpat": {
+            "latest_year": 2024,
+            "latest_yield": 3.389994589581079,
+            "latest_t2m": 25.159726775956283,
+            "latest_prectotcorr": 927.64,
+            "prev_t2m": 24.28490410958904,
+            "prev_prectotcorr": 1007.27
+        },
+        "bahraich": {
+            "latest_year": 2024,
+            "latest_yield": 2.375998553040123,
+            "latest_t2m": 25.665300546448087,
+            "latest_prectotcorr": 1437.91,
+            "prev_t2m": 25.368136986301373,
+            "prev_prectotcorr": 1211.82
+        },
+        "ballia": {
+            "latest_year": 2024,
+            "latest_yield": 2.269085678425621,
+            "latest_t2m": 26.782814207650272,
+            "latest_prectotcorr": 796.71,
+            "prev_t2m": 26.833534246575343,
+            "prev_prectotcorr": 685.71
+        },
+        "balrampur": {
+            "latest_year": 2024,
+            "latest_yield": 2.101998980564236,
+            "latest_t2m": 25.665300546448087,
+            "latest_prectotcorr": 1437.91,
+            "prev_t2m": 25.368136986301373,
+            "prev_prectotcorr": 1211.82
+        },
+        "banda": {
+            "latest_year": 2024,
+            "latest_yield": 0.9096590459615536,
+            "latest_t2m": 26.645327868852466,
+            "latest_prectotcorr": 773.41,
+            "prev_t2m": 26.26572602739726,
+            "prev_prectotcorr": 859.81
+        },
+        "bareilly": {
+            "latest_year": 2024,
+            "latest_yield": 1.857999604888099,
+            "latest_t2m": 25.333743169398907,
+            "latest_prectotcorr": 1072.45,
+            "prev_t2m": 24.77364383561644,
+            "prev_prectotcorr": 1061.8
+        },
+        "basti": {
+            "latest_year": 2024,
+            "latest_yield": 2.1220011702750146,
+            "latest_t2m": 25.853360655737703,
+            "latest_prectotcorr": 1293.25,
+            "prev_t2m": 25.598657534246577,
+            "prev_prectotcorr": 988.34
+        },
+        "bijnor": {
+            "latest_year": 2024,
+            "latest_yield": 2.7029995195277645,
+            "latest_t2m": 25.15445355191257,
+            "latest_prectotcorr": 981.02,
+            "prev_t2m": 24.264712328767125,
+            "prev_prectotcorr": 1107.65
+        },
+        "bulandshahr": {
+            "latest_year": 2024,
+            "latest_yield": 2.7310018971256755,
+            "latest_t2m": 25.48284153005464,
+            "latest_prectotcorr": 836.47,
+            "prev_t2m": 24.81158904109589,
+            "prev_prectotcorr": 865.59
+        },
+        "chandauli": {
+            "latest_year": 2024,
+            "latest_yield": 1.468689111897928,
+            "latest_t2m": 26.640054644808743,
+            "latest_prectotcorr": 919.94,
+            "prev_t2m": 26.70917808219178,
+            "prev_prectotcorr": 778.13
+        },
+        "chitrakoot": {
+            "latest_year": 2024,
+            "latest_yield": 1.1170091743119266,
+            "latest_t2m": 25.82614754098361,
+            "latest_prectotcorr": 1022.67,
+            "prev_t2m": 25.61906849315068,
+            "prev_prectotcorr": 887.69
+        },
+        "deoria": {
+            "latest_year": 2024,
+            "latest_yield": 1.8770058992295544,
+            "latest_t2m": 26.352650273224043,
+            "latest_prectotcorr": 1010.87,
+            "prev_t2m": 26.24805479452055,
+            "prev_prectotcorr": 866.68
+        },
+        "etah": {
+            "latest_year": 2024,
+            "latest_yield": 1.9800005987844675,
+            "latest_t2m": 25.73226775956284,
+            "latest_prectotcorr": 878.86,
+            "prev_t2m": 25.46145205479452,
+            "prev_prectotcorr": 765.9
+        },
+        "etawah": {
+            "latest_year": 2024,
+            "latest_yield": 1.706001655629139,
+            "latest_t2m": 25.83516393442623,
+            "latest_prectotcorr": 989.29,
+            "prev_t2m": 25.78490410958904,
+            "prev_prectotcorr": 730.08
+        },
+        "faizabad": {
+            "latest_year": 2024,
+            "latest_yield": 2.0600030835925667,
+            "latest_t2m": 25.710956284153003,
+            "latest_prectotcorr": 1290.59,
+            "prev_t2m": 25.463808219178084,
+            "prev_prectotcorr": 1039.27
+        },
+        "farrukhabad": {
+            "latest_year": 2024,
+            "latest_yield": 2.340419732897247,
+            "latest_t2m": 25.722978142076503,
+            "latest_prectotcorr": 887.46,
+            "prev_t2m": 25.52342465753425,
+            "prev_prectotcorr": 782.2
+        },
+        "fatehpur": {
+            "latest_year": 2024,
+            "latest_yield": 1.959505526669192,
+            "latest_t2m": 26.519016393442627,
+            "latest_prectotcorr": 678.63,
+            "prev_t2m": 25.90504109589041,
+            "prev_prectotcorr": 854.68
+        },
+        "firozabad": {
+            "latest_year": 2024,
+            "latest_yield": 1.9240006546376989,
+            "latest_t2m": 25.917786885245903,
+            "latest_prectotcorr": 1016.9,
+            "prev_t2m": 25.90109589041096,
+            "prev_prectotcorr": 687.78
+        },
+        "gautam buddha nagar": {
+            "latest_year": 2024,
+            "latest_yield": 2.146008193445244,
+            "latest_t2m": 25.51030054644809,
+            "latest_prectotcorr": 828.14,
+            "prev_t2m": 24.726027397260275,
+            "prev_prectotcorr": 895.14
+        },
+        "ghaziabad": {
+            "latest_year": 2024,
+            "latest_yield": 3.2550058229084486,
+            "latest_t2m": 25.51030054644809,
+            "latest_prectotcorr": 828.14,
+            "prev_t2m": 24.726027397260275,
+            "prev_prectotcorr": 895.14
+        },
+        "ghazipur": {
+            "latest_year": 2024,
+            "latest_yield": 1.7657711647232734,
+            "latest_t2m": 26.739043715847,
+            "latest_prectotcorr": 890.49,
+            "prev_t2m": 26.97646575342466,
+            "prev_prectotcorr": 677.39
+        },
+        "gonda": {
+            "latest_year": 2024,
+            "latest_yield": 2.5929995483579584,
+            "latest_t2m": 25.710956284153003,
+            "latest_prectotcorr": 1290.59,
+            "prev_t2m": 25.463808219178084,
+            "prev_prectotcorr": 1039.27
+        },
+        "gorakhpur": {
+            "latest_year": 2024,
+            "latest_yield": 1.7419985597670398,
+            "latest_t2m": 25.95161202185793,
+            "latest_prectotcorr": 1308.87,
+            "prev_t2m": 25.73312328767124,
+            "prev_prectotcorr": 1079.09
+        },
+        "hamirpur": {
+            "latest_year": 2024,
+            "latest_yield": 1.5176344977896217,
+            "latest_t2m": 26.43360655737705,
+            "latest_prectotcorr": 802.48,
+            "prev_t2m": 26.129150684931503,
+            "prev_prectotcorr": 790.98
+        },
+        "hardoi": {
+            "latest_year": 2024,
+            "latest_yield": 2.205000705101872,
+            "latest_t2m": 25.677486338797813,
+            "latest_prectotcorr": 908.71,
+            "prev_t2m": 25.472739726027395,
+            "prev_prectotcorr": 843.11
+        },
+        "hathras": {
+            "latest_year": 2024,
+            "latest_yield": 2.336998076314316,
+            "latest_t2m": 25.8074043715847,
+            "latest_prectotcorr": 884.86,
+            "prev_t2m": 25.59575342465753,
+            "prev_prectotcorr": 705.5
+        },
+        "jalaun": {
+            "latest_year": 2024,
+            "latest_yield": 1.3295020145044318,
+            "latest_t2m": 26.25049180327869,
+            "latest_prectotcorr": 961.44,
+            "prev_t2m": 26.133342465753422,
+            "prev_prectotcorr": 768.77
+        },
+        "jaunpur": {
+            "latest_year": 2024,
+            "latest_yield": 1.9360022917711093,
+            "latest_t2m": 26.62598360655738,
+            "latest_prectotcorr": 846.37,
+            "prev_t2m": 26.48054794520548,
+            "prev_prectotcorr": 808.39
+        },
+        "jhansi": {
+            "latest_year": 2024,
+            "latest_yield": 1.184314560076357,
+            "latest_t2m": 25.934890710382515,
+            "latest_prectotcorr": 1070.03,
+            "prev_t2m": 25.69008219178082,
+            "prev_prectotcorr": 892.72
+        },
+        "kannauj": {
+            "latest_year": 2024,
+            "latest_yield": 1.408979474741152,
+            "latest_t2m": 25.979508196721312,
+            "latest_prectotcorr": 846.52,
+            "prev_t2m": 25.75101369863014,
+            "prev_prectotcorr": 795.93
+        },
+        "kanpur dehat": {
+            "latest_year": 2024,
+            "latest_yield": 1.666969689524418,
+            "latest_t2m": 26.25013661202185,
+            "latest_prectotcorr": 773.61,
+            "prev_t2m": 25.78276712328767,
+            "prev_prectotcorr": 862.78
+        },
+        "kaushambi": {
+            "latest_year": 2024,
+            "latest_yield": 1.5299935103411304,
+            "latest_t2m": 26.68729508196721,
+            "latest_prectotcorr": 800.82,
+            "prev_t2m": 26.4013698630137,
+            "prev_prectotcorr": 824.13
+        },
+        "lalitpur": {
+            "latest_year": 2024,
+            "latest_yield": 2.1220004498243954,
+            "latest_t2m": 25.38639344262295,
+            "latest_prectotcorr": 1137.65,
+            "prev_t2m": 24.88871232876712,
+            "prev_prectotcorr": 868.31
+        },
+        "lucknow": {
+            "latest_year": 2024,
+            "latest_yield": 1.8220008825568927,
+            "latest_t2m": 25.793032786885245,
+            "latest_prectotcorr": 1163.97,
+            "prev_t2m": 25.545698630136982,
+            "prev_prectotcorr": 953.08
+        },
+        "maharajganj": {
+            "latest_year": 2024,
+            "latest_yield": 2.3729986280057505,
+            "latest_t2m": 25.84603825136612,
+            "latest_prectotcorr": 1357.3,
+            "prev_t2m": 25.692465753424656,
+            "prev_prectotcorr": 1154.73
+        },
+        "mahoba": {
+            "latest_year": 2024,
+            "latest_yield": 0.9764792091726774,
+            "latest_t2m": 26.343360655737705,
+            "latest_prectotcorr": 879.41,
+            "prev_t2m": 26.102958904109588,
+            "prev_prectotcorr": 843.45
+        },
+        "mainpuri": {
+            "latest_year": 2024,
+            "latest_yield": 2.330999966634413,
+            "latest_t2m": 25.83516393442623,
+            "latest_prectotcorr": 989.29,
+            "prev_t2m": 25.78490410958904,
+            "prev_prectotcorr": 730.08
+        },
+        "mathura": {
+            "latest_year": 2024,
+            "latest_yield": 2.099997940416242,
+            "latest_t2m": 25.87669398907104,
+            "latest_prectotcorr": 886.06,
+            "prev_t2m": 25.51843835616438,
+            "prev_prectotcorr": 756.47
+        },
+        "mau": {
+            "latest_year": 2024,
+            "latest_yield": 2.0869953836608937,
+            "latest_t2m": 26.504972677595628,
+            "latest_prectotcorr": 893.27,
+            "prev_t2m": 26.592712328767124,
+            "prev_prectotcorr": 715.82
+        },
+        "meerut": {
+            "latest_year": 2024,
+            "latest_yield": 3.222999263855295,
+            "latest_t2m": 25.159726775956283,
+            "latest_prectotcorr": 927.64,
+            "prev_t2m": 24.28490410958904,
+            "prev_prectotcorr": 1007.27
+        },
+        "mirzapur": {
+            "latest_year": 2024,
+            "latest_yield": 1.7768433683482647,
+            "latest_t2m": 26.3088524590164,
+            "latest_prectotcorr": 1011.81,
+            "prev_t2m": 26.32043835616438,
+            "prev_prectotcorr": 812.74
+        },
+        "moradabad": {
+            "latest_year": 2024,
+            "latest_yield": 1.611002028928595,
+            "latest_t2m": 25.329016393442625,
+            "latest_prectotcorr": 1009.17,
+            "prev_t2m": 24.63942465753425,
+            "prev_prectotcorr": 1093.56
+        },
+        "muzaffarnagar": {
+            "latest_year": 2024,
+            "latest_yield": 2.8090001648846443,
+            "latest_t2m": 24.87177595628416,
+            "latest_prectotcorr": 1093.04,
+            "prev_t2m": 23.880520547945203,
+            "prev_prectotcorr": 1232.28
+        },
+        "pilibhit": {
+            "latest_year": 2024,
+            "latest_yield": 2.5650002762736213,
+            "latest_t2m": 25.32139344262295,
+            "latest_prectotcorr": 1146.0,
+            "prev_t2m": 24.75884931506849,
+            "prev_prectotcorr": 1148.26
+        },
+        "pratapgarh": {
+            "latest_year": 2024,
+            "latest_yield": 1.3849612447857278,
+            "latest_t2m": 26.32114754098361,
+            "latest_prectotcorr": 863.53,
+            "prev_t2m": 26.079260273972604,
+            "prev_prectotcorr": 824.17
+        },
+        "rampur": {
+            "latest_year": 2024,
+            "latest_yield": 1.7899977003097818,
+            "latest_t2m": 25.329016393442625,
+            "latest_prectotcorr": 1009.17,
+            "prev_t2m": 24.63942465753425,
+            "prev_prectotcorr": 1093.56
+        },
+        "saharanpur": {
+            "latest_year": 2024,
+            "latest_yield": 2.05499646595537,
+            "latest_t2m": 24.534180327868853,
+            "latest_prectotcorr": 1286.13,
+            "prev_t2m": 23.50868493150685,
+            "prev_prectotcorr": 1534.21
+        },
+        "shahjahanpur": {
+            "latest_year": 2024,
+            "latest_yield": 1.9849997312467849,
+            "latest_t2m": 25.548743169398907,
+            "latest_prectotcorr": 1011.3,
+            "prev_t2m": 25.168657534246574,
+            "prev_prectotcorr": 975.84
+        },
+        "shravasti": {
+            "latest_year": 2024,
+            "latest_yield": 2.676006748331255,
+            "latest_t2m": 25.665300546448087,
+            "latest_prectotcorr": 1437.91,
+            "prev_t2m": 25.368136986301373,
+            "prev_prectotcorr": 1211.82
+        },
+        "sitapur": {
+            "latest_year": 2024,
+            "latest_yield": 1.7849958068767222,
+            "latest_t2m": 25.738060109289616,
+            "latest_prectotcorr": 953.36,
+            "prev_t2m": 25.42739726027397,
+            "prev_prectotcorr": 928.29
+        },
+        "sonbhadra": {
+            "latest_year": 2024,
+            "latest_yield": 2.0352835314679263,
+            "latest_t2m": 25.99710382513661,
+            "latest_prectotcorr": 1059.52,
+            "prev_t2m": 26.00517808219178,
+            "prev_prectotcorr": 826.77
+        },
+        "sultanpur": {
+            "latest_year": 2024,
+            "latest_yield": 2.290004314684309,
+            "latest_t2m": 26.00333333333333,
+            "latest_prectotcorr": 985.89,
+            "prev_t2m": 25.77717808219178,
+            "prev_prectotcorr": 897.22
+        },
+        "unnao": {
+            "latest_year": 2024,
+            "latest_yield": 2.00699870059378,
+            "latest_t2m": 26.25013661202185,
+            "latest_prectotcorr": 773.61,
+            "prev_t2m": 25.78276712328767,
+            "prev_prectotcorr": 862.78
+        },
+        "varanasi": {
+            "latest_year": 2024,
+            "latest_yield": 1.8509990235655889,
+            "latest_t2m": 26.640054644808743,
+            "latest_prectotcorr": 919.94,
+            "prev_t2m": 26.70917808219178,
+            "prev_prectotcorr": 778.13
+        }
+    }
+}
