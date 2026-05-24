@@ -1,0 +1,22 @@
+1-crop_production.csv(kaggle) se raj up k yield nikala which is target
+multi_state_all_crops_yield.csv isme
+
+2- up raj k cordinates up_all_district_coordinates.csv rajasthan_district_coordinates.csv and ccombined into multi_state_coordinates.csv then using nasa api will get multi state weather csv
+
+3-google engine se ndvi data hoga google drive m download --> multi_state_ndvi csv 
+
+4- multistate merge py se will get multistatefinal dataset
+
+
+
+| Feature              | Purpose                         |
+| -------------------- | ------------------------------- |
+| Crop Encoding        | ML understanding of crop type   |
+| State Encoding       | state-specific climate behavior |
+| Temp Anomaly         | abnormal heat                   |
+| Rainfall Anomaly     | abnormal rain                   |
+| Humidity Anomaly     | moisture irregularity           |
+| Previous Year Yield  | temporal learning               |
+| 3-Year Yield Average | historical trend                |
+| Yield Change %       | trend momentum                  |
+| NDVI Trend           | vegetation progression          |
